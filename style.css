@@ -1,0 +1,114 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: unset;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: auto;
+    font-size: 15px;
+    background-color: rgb(23, 151, 255);
+}
+
+.intro {
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+}
+
+.intro p:nth-of-type(1) {
+    font-size: 33px;
+    color: rgb(124, 124, 124);
+}
+
+.cards {
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: hsl(0, 0%, 98%);
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 1px;
+}
+
+.cards .card-title {
+    margin-left: 0;
+    width: 40%;
+    color: hsl(234, 12%, 34%);
+}
+
+.cards .card-text {
+    color: hsl(0, 0%, 60%);
+    margin-left: 0;
+    font-weight: 400;
+    width: 70%;
+}
+
+.cards img {
+    width: 100%;
+    float: right;
+    margin-right: 20px;
+}
+
+@media (min-width:1440px) {
+
+    /* Card Alignment */
+    .cards:nth-of-type(1) {
+        float: flex-end;
+        margin: auto;
+    }
+
+    .cards:nth-of-type(2) {
+        float: right;
+        margin: auto;
+    }
+
+    .cards:nth-of-type(3) {
+        float: inline-start;
+    }
+
+    .cards:nth-of-type(4) {
+        float: flex-start;
+        margin: auto;
+    }
+}
+
+
+footer {
+    margin-top: 15px;
+}
+
+/*         Mobile Phone/Tablet      */
+@media (max-width:1440px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardContainer {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards {
+        position: relative;
+        margin: 15px 15px;
+    }
+}
